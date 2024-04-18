@@ -9,14 +9,8 @@
   ],
   "labels": ["dependencies", "python"],
   "semanticCommitScope": "{{ depType }}",
-  "rangeStrategy": "update-lockfile",
+  "rangeStrategy": "bump",
   "constraints": {
     "python": "==3.11"
-  },
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["^opentelemetry-"],
-      "groupName": "opentelemetry"
-    }
-  ]
+  }
 }
