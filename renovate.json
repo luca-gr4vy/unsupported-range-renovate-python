@@ -12,5 +12,11 @@
   "rangeStrategy": "bump",
   "constraints": {
     "python": "==3.11"
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["opentelemetry-instrumentation-requests"],
+      "rangeStrategy": "pin"
+    }
+  ]
 }
