@@ -13,7 +13,8 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["^opentelemetry-"],
-      "groupName": "opentelemetry"
+      "groupName": "opentelemetry",
+      "ignoreUnstable": false
     }
   ]
 }
