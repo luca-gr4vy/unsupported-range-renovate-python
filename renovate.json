@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "schedule:earlyMondays",
+    ":prHourlyLimit4",
+    ":rebaseStalePrs",
+    ":semanticCommits"
+  ],
+  "labels": ["dependencies", "python"],
+  "semanticCommitScope": "{{ depType }}",
+  "rangeStrategy": "update-lockfile",
+  "constraints": {
+    "python": "==3.11"
+  },
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^opentelemetry-"],
+      "groupName": "opentelemetry"
+    }
+  ]
+}

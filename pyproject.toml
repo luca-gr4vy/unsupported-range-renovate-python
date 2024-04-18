@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "unsupported-range-renovate-python"
+version = "0.0.1"
+description = ""
+authors = ["Luca Allievi <luca@gr4vy.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.x"
+opentelemetry-api = "^1.18.0"
+opentelemetry-sdk = "^1.18.0"
+opentelemetry-exporter-otlp-proto-grpc = "^1.18.0"
+opentelemetry-instrumentation-requests = "^0.43b0"
