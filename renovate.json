@@ -9,5 +9,11 @@
   ],
   "labels": ["dependencies", "python"],
   "semanticCommitScope": "{{ depType }}",
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^opentelemetry-"],
+      "groupName": "opentelemetry"
+    }
+  ]
 }
