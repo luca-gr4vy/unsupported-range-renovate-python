@@ -6,7 +6,7 @@ authors = ["Luca Allievi <luca@gr4vy.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11.x"
+python = "3.12.4"
 opentelemetry-api = "^1.18.0"
 opentelemetry-sdk = "^1.18.0"
 opentelemetry-exporter-otlp-proto-grpc = "^1.18.0"
